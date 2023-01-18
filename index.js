@@ -169,20 +169,19 @@ XeonLft = await getBuffer(ppuser)
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282142563862-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `.    /)    /)                  
-                                   .    /)    /)                  
-                   (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
-                . .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
-                . .┊
-                . .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
-                . .┊   🆔  Member : ${xmembers}th
-                . .┊   💠  Group : ${metadata.subject}
-                . .┊   🌐  Waktu : ${xtime} ${xdate}
-                . .┊
-                . .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
-
-                              » Cᴏɴғᴇss Xᴇʀғ «`
+.    /)    /)                  
+   (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
+. .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
+. .┊
+. .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
+. .┊   🆔  Member : ${xmembers}th
+. .┊   💠  Group : ${metadata.subject}
+. .┊   🌐  Waktu : ${xtime} ${xdate}
+. .┊
+. .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
+              » Cᴏɴғᴇss Xᴇʀғ «`
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Xerf ~'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Wᴇʟᴄᴏᴍᴇ Xᴇʀғ'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -213,17 +212,17 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282142563862-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xeonbody = `.    /)    /)                  
-                    .    /)    /)                  
-                       (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
-                    . .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
-                    . .┊
-                    . .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
-                    . .┊   🆔  Member : ${xeonmembers}th
-                    . .┊   💠  Group : ${metadata.subject}
-                    . .┊   🌐  Waktu : ${xtime} ${xdate}
-                    . .┊
-                    . .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
-                                  » Cᴏɴғᴇss Xᴇʀғ «`
+.    /)    /)                  
+   (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
+. .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
+. .┊
+. .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
+. .┊   🆔  Member : ${xeonmembers}th
+. .┊   💠  Group : ${metadata.subject}
+. .┊   🌐  Waktu : ${xtime} ${xdate}
+. .┊
+. .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
+              » Cᴏɴғᴇss Xᴇʀғ «`
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: '🎀 Okéstadz '}, type: 1}
 ]

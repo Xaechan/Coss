@@ -300,7 +300,7 @@ jumlahharian = `${dataa.value}`
 //premium
 const prem1 = `Hi bro  ${pushname} ${ucapanWaktu} \n\nThis feature is for premium members only, please buy premium to use this feature`
 const prem2 = `Click the button below to buy premium`
-const prem3 = [{buttonId: `${prefix}buypreim`,buttonText: {displayText: `BUY PREMIUM`,},type: 1,},]
+const prem3 = [{buttonId: `${prefix}buyprem`,buttonText: {displayText: `BUY PREMIUM`,},type: 1,},]
 blomdaftar = `${ucapanWaktu} @${sender.split("@")[0]} Kamu belum terdaftar di database cek private message mu untuk mendaftar`
 limitabis = `*[YOUR LIMIT IS EXPIRED]*\nBuy limit in ${prefix}buylimit or buy premium to get unlimited limit`
 
@@ -1665,7 +1665,7 @@ case 'sticker': case 's': case 'stickergif': case 'sgif': {
             m.reply(db)
         }
         break
-case 'buypreim':
+case 'buyprem':
 m.reply(`Chat owner bro, please type .owner`)
 break
   case 'addprem':
@@ -6303,9 +6303,9 @@ const reply = `
     }
     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 ${global.botname} 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
-{buttonId: `owner`, buttonText: {displayText: 'Owner Xerf ~'}, type: 1}
+{buttonId: `owner`, buttonText: {displayText: 'Owner Devs'}, type: 1}
 ]
 let buttonMessage = {
 image: {url: `https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg`},
@@ -6717,7 +6717,7 @@ case 'pcgcslow': {
            	
                 if (!isCreator) return m.reply(`${mess.owner}`)
                 if (!m.isGroup) return m.reply(mess.group)
-if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 91xxxxxxxxxx`)
+if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 62xxxxxxxxxx`)
              pmgcmassxeon = { 
                     key: { 
                         fromMe: false, 
@@ -6727,7 +6727,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 91xxxxxxxxxx
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -6801,7 +6801,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 91xxxxxxxxxx
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -6875,7 +6875,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 91xxxxxxxxxx
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -6911,7 +6911,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcmass 91xxxxxxxxxx
 case 'pcfast':               
            	
                 if (!isCreator) return m.reply(`${mess.owner}`)
-if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcinfinite 91xxxxxxxxxx`)
+if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcinfinite 62xxxxxxxxxx`)
              pcinfinitexeon = { 
                     key: { 
                         fromMe: false, 
@@ -6967,7 +6967,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcinfinite 91xxxxxx
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -7101,7 +7101,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcbunny 91xxxxxxxxxx`
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -7151,7 +7151,7 @@ if (!text) return reply(`${mess.attack}\nExample: ${prefix}pcgcbunny 91xxxxxxxxx
                     message: { 
                         "imageMessage": { 
                             "mimetype": "image/jpeg", 
-                            "caption": `🦄Xerf ~`,
+                            "caption": `🦄 Xerf ~`,
                             "jpegThumbnail": xpicvirus
                         } 
                     } 
@@ -7240,7 +7240,7 @@ if (args.length == 0) return m.reply(`Usage ${prefix+command} amount\nExample ${
 amount = `${encodeURI(q)}`
 ydd = `${botname}`
 for (let i = 0; i < amount; i++) {
-let teks = `✪〘 * Mention All User * 〙✪
+let teks = `⟩〘 * Mention All User * 〙⟩
  ${themeemoji} *Message : ${q ? q : 'empty'}*\n\n`
 for (let mem of participants) {
 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
@@ -7484,9 +7484,11 @@ case 'textshot': {
 case 'tqtt': 
 throw `Thanks to God
 
-Xerf (Me)
-Xeon
-My family
+         Xerf (Me)
+           Xeon
+         My family
+
+     follow my instagram
 And all friends who helped assemble this bot !!!`
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
@@ -7495,40 +7497,40 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌───────────┈ ⳹
-            │ Hawoo 👋 
-            └┬ →  ${pushname} 
-            ┌┤ →  ${ucapanWaktu} 
-            │└────────────┈ ⳹
-            │
-            └─ *_Informasi Robots_*       
-            │_Speedy_  : ${latensie.toFixed(4)} _ms_
-            │Runtime : ${runtime(process.uptime())}
-            │Lisensi of : @${ini_mark.split('@')[0]}
-            │Bot : ${global.botname}
-            │Owner : @${ownernya.split('@')[0]}
-            │Prefixes :  No-Prefix 
-            │Status : ${XeonBotInc.public ? 'Public' : `Self`}
-            │Server : ${os.hostname()}
-            │Platform : ${os.platform()}
-            │Pengguna : ${Object.keys(global.db.data.users).length}
-            │Jumlah Perintah : ${jumlahcmd}
-            │Jumlah Perintah Hari ini : ${jumlahharian}
-            │
-            └─ *_Informasi Pengguna_* 
-            │Nama : ${pushname}
-            │Nomor : @${me.split('@')[0]}
-            │Status : ${isPremium ? '✅ Premium' : `❌ No Premium`}
-            │Batas : ${isPremium ? '♾Infinity' : `${db.data.users[m.sender].limit} Perhari`}
-            │
-            └─ *_Informasi Waktu_*
-            │Waktu : ${xtime}
-            │Tanggal : ${xdate}
-            └┬────────────┈ ⳹
-               │✑    Silahkan Gunakan
-               │✑  Perintah Dibawah Ini
-               └─────────────┈ ⳹`
+│ Hawoo 👋 
+└┬ →  ${pushname} 
+┌┤ →  ${ucapanWaktu} 
+│└────────────┈ ⳹
+│
+└─ *_Informasi Robots_*       
+│ _Speedy_  : ${latensie.toFixed(4)} _ms_
+│Runtime : ${runtime(process.uptime())}
+│Lisensi of : @${ini_mark.split('@')[0]}
+│Bot : ${global.botname}
+│Owner : @${ownernya.split('@')[0]}
+│Prefixes :  No-Prefix 
+│Status : ${XeonBotInc.public ? 'Public' : `Self`}
+│Server : ${os.hostname()}
+│Platform : ${os.platform()}
+│Pengguna : ${Object.keys(global.db.data.users).length}
+│Jumlah Perintah : ${jumlahcmd}
+│Jumlah Perintah Hari ini : ${jumlahharian}
+│
+└─ *_Informasi Pengguna_* 
+│Nama : ${pushname}
+│Nomor : @${me.split('@')[0]}
+│Status : ${isPremium ? '✅ Premium' : `❌ No Premium`}
+│Batas : ${isPremium ? '♾Infinity' : `${db.data.users[m.sender].limit} Perhari`}
+│
+└─ *_Informasi Waktu_*
+│Waktu : ${xtime}
+│Tanggal : ${xdate}
+└┬────────────┈ ⳹
+   │✑    Silahkan Gunakan
+   │✑  Perintah Dibawah Ini
+   └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Biodata' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
@@ -7710,13 +7712,13 @@ break
 var unicorn = await getBuffer(picak+'All Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» Xᴇʀғ «'}, type: 1}
   
 ]
 const buttonMessage = {
     image: unicorn,
-    caption: `*↪ Owner ↩* 	
+    caption: `          *Xᴇʀғ ~* 	
 »  ${prefix}self
 »  ${prefix}public
 »  ${prefix}join [link]
@@ -7768,7 +7770,7 @@ const buttonMessage = {
 » ${prefix}checkvote
 » ${prefix}delvote
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » MAKER 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » MAKER 
 » ${prefix}candy
 » ${prefix}blackpinkneon
 » ${prefix}deepsea
@@ -7853,24 +7855,25 @@ const buttonMessage = {
 » ${prefix}strawberry
 » ${prefix}discovery
 » ${prefix}1917
-»  ${prefix}sci_fi
-»  ${prefix}ancient
-»  ${prefix}fabric
-»  ${prefix}hoorror
-»  ${prefix}whitebear
-»  ${prefix}juice
-»  ${prefix}batman
-»  ${prefix}multicolor
-»  ${prefix}wonderful
-»  ${prefix}sketch
-»  ${prefix}marvel
-»  ${prefix}foggy
-»  ${prefix}writing
-»  ${prefix}halloweenfire
-»  ${prefix}halloween
-»  ${prefix}watercolor
-»  ${prefix}classic
-» ••••••• »✪ DOWNLOAD 	
+» ${prefix}sci_fi
+» ${prefix}ancient
+» ${prefix}fabric
+» ${prefix}hoorror
+» ${prefix}whitebear
+» ${prefix}juice
+» ${prefix}batman
+» ${prefix}multicolor
+» ${prefix}wonderful
+» ${prefix}sketch
+» ${prefix}marvel
+» ${prefix}foggy
+» ${prefix}writing
+» ${prefix}halloweenfire
+» ${prefix}halloween
+» ${prefix}watercolor
+» ${prefix}classic
+»
+» •••••••••••••• »⟩ DOWNLOAD 	
 » ${prefix}tiktok [url]
 » ${prefix}tiktokaudio [url]
 » ${prefix}instagram [url]
@@ -7880,7 +7883,7 @@ const buttonMessage = {
 » ${prefix}ytmp4 [url|quality]
 » ${prefix}gitclone [repo link]
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » SEARCH 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » SEARCH 	
 » ${prefix}play [query]
 » ${prefix}song [query]
 » ${prefix}yts [query]
@@ -7900,7 +7903,7 @@ const buttonMessage = {
 » ${prefix}ytsearch [query]
 » ${prefix}ringtone [query]
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » CONVERT 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » CONVERT 
 »  ${prefix}toimage [reply stick]
 »  ${prefix}sticker [reply img|gif]
 »  ${prefix}take [reply img|gif|stik]
@@ -7929,10 +7932,10 @@ const buttonMessage = {
 » ${prefix}smooth [reply aud]
 » ${prefix}squirrel [reply aud]
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » IMG EFFECT 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » IMG EFFECT 
 » ${prefix}removebg [reply img]
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » RANDOM IMG 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » RANDOM IMG 
 » ${prefix}coffee
 » ${prefix}woof
 » ${prefix}meow
@@ -7971,7 +7974,7 @@ const buttonMessage = {
 » ${prefix}wallphone
 » ${prefix}wallml
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » RANDOM VIDEO
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » RANDOM VIDEO
 » ${prefix}tiktokgirl	
 » ${prefix}tiktoknukhty
 » ${prefix}tiktokpanrika
@@ -7981,7 +7984,7 @@ const buttonMessage = {
 » ${prefix}tiktoksantuy
 » ${prefix}tiktokbocil
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » EMOTE 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » EMOTE 
 » ${prefix}instagramemoji
 » ${prefix}facebookemoji
 » ${prefix}iphoneemoji
@@ -7995,7 +7998,7 @@ const buttonMessage = {
 » ${prefix}pediaemoji
 » ${prefix}microsoftemoji
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » ANIME 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » ANIME 
 » ${prefix}animeneko
 » ${prefix}waifu
 » ${prefix}animewaifu
@@ -8047,7 +8050,7 @@ const buttonMessage = {
 » ${prefix}couplepp
 » ${prefix}animewall [query]
 » ${prefix}animewall2 [query]
-» ••••••• »✪ STICKER 
+» •••••••••••••• »⟩ STICKER 
 »  ${prefix}patrick
 »  ${prefix}emoji
 »  ${prefix}emojimix
@@ -8059,7 +8062,7 @@ const buttonMessage = {
 »  ${prefix}nicholas
 »  ${prefix}cartoon
 »  ${prefix}stickman
-» ••••••• »✪ ANIME STICKER 
+» •••••••••••••• »⟩ ANIME STICKER 
 » ${prefix}loli
 » ${prefix}bully
 » ${prefix}cuddle
@@ -8090,7 +8093,7 @@ const buttonMessage = {
 » ${prefix}neko
 » ${prefix}gura
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » NSFW 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » NSFW 
 » ${prefix}gifhentai
 » ${prefix}gifblowjob
 » ${prefix}hentaivideo
@@ -8127,7 +8130,7 @@ const buttonMessage = {
 » ${prefix}yuri
 » ${prefix}zettai
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » FUN 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » FUN 
 »  ${prefix}say [text]
 »  ${prefix}define [text]
 »  ${prefix}how [text
@@ -8203,7 +8206,7 @@ const buttonMessage = {
 »  ${prefix}fuckgirl
 »  ${prefix}playgirl
 »  ${prefix}quotes
-» ••••••• »✪ SOUND 
+» •••••••••••••• »⟩ SOUND 
 »  ${prefix}sound1
 »  ${prefix}sound2
 »  ${prefix}sound3
@@ -8365,7 +8368,7 @@ const buttonMessage = {
 »  ${prefix}sound159
 »  ${prefix}sound160
 »  ${prefix}sound161
-» ••••••• »✪ GAME 
+» •••••••••••••• »⟩ GAME 
 »  ${prefix}truth
 »  ${prefix}dare
 »  ${prefix}tictactoe
@@ -8373,12 +8376,12 @@ const buttonMessage = {
 »  ${prefix}guess [option]
 »  ${prefix}math [mode]
 »  ${prefix}suitpvp [tag]
-» ✪ ANONYMOUS CHAT 
+» ⟩ ANONYMOUS CHAT 
 » ${prefix}anonymous
 » ${prefix}start
 » ${prefix}next
 » ${prefix}leave
-» ••••••• »✪ DATABASE 
+» •••••••••••••• »⟩ DATABASE 
 »  ${prefix}setcmd
 »  ${prefix}listcmd
 »  ${prefix}delcmd
@@ -8387,7 +8390,7 @@ const buttonMessage = {
 »  ${prefix}listmsg
 »  ${prefix}getmsg
 »  ${prefix}delmsg
-» ••••••• »✪ OTHER 
+» •••••••••••••• »⟩ OTHER 
 »  ${prefix}afk
 »  ${prefix}id
 »  ${prefix}toqr [link]
@@ -8409,8 +8412,8 @@ const buttonMessage = {
 »  ${prefix}request
 »  ${prefix}report [bug]
 » 
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »「 BUG MENU 」	
-» ••••••• »☾pc attack☽
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »「 BUG MENU 」	
+» •••••••••••••• »⫷⟬ Pᴄ Aᴛᴛᴀᴄᴋ ⟭⫸
 » ${prefix}pcbut [number]
 » ${prefix}pcvn [number]
 » ${prefix}pcstick [number]
@@ -8425,12 +8428,12 @@ const buttonMessage = {
 » ${prefix}catalogbug [amount]
 » ${prefix}trollybug [amount]
 » ${prefix}trollybug2 [amount]
-» ••••••• »☾gc attack☽
+» •••••••••••••• »⫷⟬ Gᴄ Aᴛᴛᴀᴄᴋ ⟭⫸
 » ${prefix}gcslow
 » ${prefix}gcfast
 » ${prefix}gcbunny
 » ${prefix}tagallbug
-» ••••••• »☾pc & gc attack☽
+» •••••••••••••• »⫷⟬ Pᴄ Aᴛᴛᴀᴄᴋ Gᴄ⟭⫸
 » ${prefix}vnbug [amount]
 » ${prefix}docbug [amount]
 » ${prefix}pcgcslow [number]
@@ -8440,8 +8443,8 @@ const buttonMessage = {
 » ${prefix}docfuck [amount]
 » ${prefix}docsoft [amount]
 » ${prefix}docsoft2 [amount]
-» ••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+» •••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8452,14 +8455,14 @@ break
       case 'ownermenu':{
 	   var unicorn = await getBuffer(picak+'Owner Menu')
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
   {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},
   {buttonId: 'owner', buttonText: {displayText: 'Owner ??'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » OWNER 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » OWNER 	
 »  ${prefix}self
 »  ${prefix}public
 »  ${prefix}join [link]
@@ -8473,8 +8476,8 @@ const buttonMessage = {
 »  ${prefix}setppbot [image]
 »  ${prefix}setthumb [reply img]
 »  ${prefix}setexif
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8486,13 +8489,13 @@ break
 var unicorn = await getBuffer(picak+'Group Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » GROUP 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » GROUP 	
 » ${prefix}grouplink
 » ${prefix}ephemeral [option]
 » ${prefix}setgcpp [image]
@@ -8532,8 +8535,8 @@ const buttonMessage = {
 » ${prefix}upvote
 » ${prefix}checkvote
 » ${prefix}delvote
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8545,13 +8548,13 @@ case 'makermenu':{
 var unicorn = await getBuffer(picak+'Maker Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » MAKER 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » MAKER 	
 » ${prefix}candy
 » ${prefix}8bit
 » ${prefix}horror
@@ -8640,25 +8643,25 @@ const buttonMessage = {
 » ${prefix}strawberry
 » ${prefix}discovery
 » ${prefix}1917
-»  ${prefix}sci_fi
-»  ${prefix}ancient
-»  ${prefix}fabric
-»  ${prefix}hoorror
-»  ${prefix}whitebear
-»  ${prefix}juice
-»  ${prefix}batman
-»  ${prefix}multicolor
-»  ${prefix}wonderful
-»  ${prefix}sketch
-»  ${prefix}marvel
-»  ${prefix}foggy
-»  ${prefix}writing
-»  ${prefix}halloweenfire
-»  ${prefix}halloween
-»  ${prefix}watercolor
-»  ${prefix}classic
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+» ${prefix}sci_fi
+» ${prefix}ancient
+» ${prefix}fabric
+» ${prefix}hoorror
+» ${prefix}whitebear
+» ${prefix}juice
+» ${prefix}batman
+» ${prefix}multicolor
+» ${prefix}wonderful
+» ${prefix}sketch
+» ${prefix}marvel
+» ${prefix}foggy
+» ${prefix}writing
+» ${prefix}halloweenfire
+» ${prefix}halloween
+» ${prefix}watercolor
+» ${prefix}classic
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8670,13 +8673,13 @@ break
 var unicorn = await getBuffer(picak+'Download Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » DOWNLOAD 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » DOWNLOAD 	
 » ${prefix}tiktok [url]
 » ${prefix}tiktokaudio [url]
 » ${prefix}instagram [url]
@@ -8685,8 +8688,8 @@ const buttonMessage = {
 » ${prefix}ytmp3 [url|quality]
 » ${prefix}ytmp4 [url|quality]
 » ${prefix}gitclone [repo link]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8698,13 +8701,13 @@ break
 var unicorn = await getBuffer(picak+'Search Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » SEARCH 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » SEARCH 	
 » ${prefix}play [query]
 » ${prefix}song [query]
 » ${prefix}yts [query]
@@ -8723,8 +8726,8 @@ const buttonMessage = {
 » ${prefix}wikimedia [query]
 » ${prefix}ytsearch [query]
 » ${prefix}ringtone [query]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8736,27 +8739,27 @@ break
 var unicorn = await getBuffer(picak+'Convert Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » CONVERT 	
-»  ${prefix}toimage [reply stick]
-»  ${prefix}sticker [reply img|gif]
-»  ${prefix}take [reply img|gif|stik]
-»  ${prefix}smeme [reply img]
-»  ${prefix}emoji [emoji]
-»  ${prefix}tovideo [reply img]
-»  ${prefix}togif [reply stick]
-»  ${prefix}tovn [reply aud]
-»  ${prefix}tomp3 [reply vn]
-»  ${prefix}toaudio [reply vid]
-»  ${prefix}ebinary [reply txt]
-»  ${prefix}dbinary [reply txt]
-»  ${prefix}tinyurl [link]
-»  ${prefix}styletext [text]
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » CONVERT 	
+» ${prefix}toimage [reply stick]
+» ${prefix}sticker [reply img|gif]
+» ${prefix}take [reply img|gif|stik]
+» ${prefix}smeme [reply img]
+» ${prefix}emoji [emoji]
+» ${prefix}tovideo [reply img]
+» ${prefix}togif [reply stick]
+» ${prefix}tovn [reply aud]
+» ${prefix}tomp3 [reply vn]
+» ${prefix}toaudio [reply vid]
+» ${prefix}ebinary [reply txt]
+» ${prefix}dbinary [reply txt]
+» ${prefix}tinyurl [link]
+» ${prefix}styletext [text]
 » ${prefix}volume [reply aud]
 » ${prefix}bass [reply aud]
 » ${prefix}blown [reply aud]
@@ -8770,8 +8773,8 @@ const buttonMessage = {
 » ${prefix}slow [reply aud]
 » ${prefix}smooth [reply aud]
 » ${prefix}squirrel [reply aud]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8783,13 +8786,13 @@ case 'randomimagemenu':{
 var unicorn = await getBuffer(picak+'Random Image Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » RANDOM IMG 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » RANDOM IMG 	
 » ${prefix}coffee
 » ${prefix}woof
 » ${prefix}meow
@@ -8827,8 +8830,8 @@ const buttonMessage = {
 » ${prefix}couplepicture
 » ${prefix}wallphone
 » ${prefix}wallml
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8840,13 +8843,13 @@ case 'randomvideomenu':{
 var unicorn = await getBuffer(picak+'Random Video Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » RANDOM VIDEO
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » RANDOM VIDEO
 » ${prefix}tiktokgirl	
 » ${prefix}tiktoknukhty
 » ${prefix}tiktokpanrika
@@ -8855,8 +8858,8 @@ const buttonMessage = {
 » ${prefix}tiktokghea
 » ${prefix}tiktoksantuy
 » ${prefix}tiktokbocil
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8868,14 +8871,14 @@ break
 var unicorn = await getBuffer(picak+'Emote Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » EMOTE 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » EMOTE 	
 » ${prefix}instagramemoji
 » ${prefix}facebookemoji
 » ${prefix}iphoneemoji
@@ -8888,8 +8891,8 @@ const buttonMessage = {
 » ${prefix}googleemoji
 » ${prefix}pediaemoji
 » ${prefix}microsoftemoji
-» ••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+» •••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8901,16 +8904,16 @@ break
 var unicorn = await getBuffer(picak+'Image Effect Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
-    caption: `╔••••••• »✪ IMG EFFECT 	
+    caption: `╔•••••••••••••• »⟩ IMG EFFECT 	
 » ${prefix}removebg [reply img]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8922,14 +8925,14 @@ case 'animemenu':{
 var unicorn = await getBuffer(picak+'Anime Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » ANIME 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » ANIME 	
 » ${prefix}animeneko
 » ${prefix}waifu
 » ${prefix}shinobu
@@ -8981,8 +8984,8 @@ const buttonMessage = {
 » ${prefix}couplepp
 » ${prefix}animewall [query]
 » ${prefix}animewall2 [query]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -8994,14 +8997,14 @@ break
 var unicorn = await getBuffer(picak+'Sticker Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » STICKER 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » STICKER 	
 » ${prefix}patrick
 » ${prefix}emoji
 » ${prefix}emojimix
@@ -9013,8 +9016,8 @@ const buttonMessage = {
 » ${prefix}nicholas
 » ${prefix}cartoon
 » ${prefix}stickman
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9026,14 +9029,14 @@ case 'animestickermenu':{
 var unicorn = await getBuffer(picak+'Anime Sticker Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » ANIME STICKER 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » ANIME STICKER 	
 » ${prefix}loli
 » ${prefix}bully
 » ${prefix}cuddle
@@ -9063,8 +9066,8 @@ const buttonMessage = {
 » ${prefix}cringe
 » ${prefix}neko
 » ${prefix}gura
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9076,14 +9079,14 @@ case 'nsfwmenu':{
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » NSFW 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » NSFW 	
 » ${prefix}gifhentai
 » ${prefix}gifblowjob
 » ${prefix}hentaivideo
@@ -9119,8 +9122,8 @@ const buttonMessage = {
 » ${prefix}thights
 » ${prefix}yuri
 » ${prefix}zettai
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9132,14 +9135,14 @@ case 'funmenu':{
 var unicorn = await getBuffer(picak+'Fun Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » Fun 
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » Fun 
 » ${prefix}say [text]	
 » ${prefix}define [text]
 » ${prefix}how [text]
@@ -9215,8 +9218,8 @@ const buttonMessage = {
 » ${prefix}fuckgirl
 » ${prefix}playgirl
 » ${prefix}quotes
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9228,14 +9231,14 @@ case 'soundmenu':{
 var unicorn = await getBuffer(picak+'Sound Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » Sound 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » Sound 	
 » ${prefix}sound1
 » ${prefix}sound2
 » ${prefix}sound3
@@ -9397,8 +9400,8 @@ const buttonMessage = {
 » ${prefix}sound159
 » ${prefix}sound160
 » ${prefix}sound161
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9410,14 +9413,14 @@ case 'gamemenu':{
 var unicorn = await getBuffer(picak+'Game Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » GAME 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » GAME 	
 » ${prefix}truth
 » ${prefix}dare
 » ${prefix}tictactoe
@@ -9425,8 +9428,8 @@ const buttonMessage = {
 » ${prefix}guess [option]
 » ${prefix}math [mode]
 » ${prefix}suitpvp [tag]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9438,8 +9441,8 @@ break
 var unicorn = await getBuffer(picak+'Anonymous Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
@@ -9461,13 +9464,13 @@ case 'databasemenu':{
 var unicorn = await getBuffer(picak+'Database Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
-    caption: `╔✪ DATABASE 	
+    caption: `╔⟫⟫⟫ DATABASE 	
 »  ${prefix}setcmd
 »  ${prefix}listcmd
 »  ${prefix}delcmd
@@ -9476,8 +9479,8 @@ const buttonMessage = {
 »  ${prefix}listmsg
 »  ${prefix}getmsg
 »  ${prefix}delmsg
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9489,14 +9492,14 @@ case 'othermenu':{
 var unicorn = await getBuffer(picak+'Other Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ » OTHER 	
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ » OTHER 	
 »  ${prefix}afk
 »  ${prefix}id
 »  ${prefix}toqr [link]
@@ -9517,8 +9520,8 @@ const buttonMessage = {
 »  ${prefix}donate
 »  ${prefix}request
 »  ${prefix}report [bug]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
@@ -9530,15 +9533,15 @@ case 'warmenu':{
 var unicorn = await getBuffer(picak+'War Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'E = mc²'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '» XxX «'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Devs'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: '» Sedekah «'}, type: 1},{buttonId: 'owner', buttonText: {displayText: '»  Xᴇʀғ  «'}, type: 1}
 
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »「 BUG MENU 」	
-» ••••••• »☾pc attack☽
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »「 BUG MENU 」	
+» •••••••••••••• »⫷⟬pc attack⟭⫸
 » ${prefix}pcbut [number]
 » ${prefix}pcvn [number]
 » ${prefix}pcstick [number]
@@ -9553,12 +9556,12 @@ const buttonMessage = {
 » ${prefix}catalogbug [amount]
 » ${prefix}trollybug [amount]
 » ${prefix}trollybug2 [amount]
-» ••••••• »☾gc attack☽
+» •••••••••••••• »⫷⟬gc attack⟭⫸
 » ${prefix}gcslow
 » ${prefix}gcfast
 » ${prefix}gcbunny
 » ${prefix}tagallbug
-» ••••••• »☾pc & gc attack☽
+» •••••••••••••• »⫷⟬pc & gc attack⟭⫸
 » ${prefix}vnbug [amount]
 » ${prefix}docbug [amount]
 » ${prefix}pcgcslow [number]
@@ -9568,8 +9571,8 @@ const buttonMessage = {
 » ${prefix}docfuck [amount]
 » ${prefix}docsoft [amount]
 » ${prefix}docsoft2 [amount]
-╚••••••• »
-« ⟬   * ~ Perintah Xerf ~ *   ⟭ »`,
+╚•••••••••••••• »
+« ⟬    ~ Xᴇʀғ Cᴏᴍᴍᴀɴᴅ ~    ⟭ »`,
     footer: `${botname}`,
     buttons: buttons,
     headerType: 4
