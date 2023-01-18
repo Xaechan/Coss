@@ -116,15 +116,15 @@ async function startXeonBotInc() {
        }
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `⟬ Group Settings Changed ⟭\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if(pea[0].announce == false) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `⟬ Group Settings Changed ⟭\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == true) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `⟬ Group Settings Changed ⟭\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == false) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `⟬ Group Settings Changed ⟭\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `⟬ Group Settings Changed ⟭\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
      }
     })
     
@@ -168,16 +168,19 @@ XeonLft = await getBuffer(ppuser)
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282142563862-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `==========================
-                            │「 Hawoo 👋 」
-                            └┬❖ 「 @${xeonName.split("@")[0]}  」
-                               │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-                               │✑  ${metadata.subject}
-                               │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-                               │✑ ${xmembers}th
-                               │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-                               │✑ ${xtime} ${xdate}
-                               └───────────────┈ `
+                xeonbody = `.    /)    /)                  
+                                   .    /)    /)                  
+                   (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
+                . .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
+                . .┊
+                . .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
+                . .┊   🆔  Member : ${xmembers}th
+                . .┊   💠  Group : ${metadata.subject}
+                . .┊   🌐  Waktu : ${xtime} ${xdate}
+                . .┊
+                . .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
+
+                              » Cᴏɴғᴇss Xᴇʀғ «`
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Xerf ~'}, type: 1}
 ]
@@ -209,16 +212,18 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282142563862-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─❖
-                                │「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-                                └┬❖ 「 @${xeonName.split("@")[0]}  」
-                                   │✑  𝗟𝗲𝗳𝘁 
-                                   │✑ ${metadata.subject}
-                                   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-                                   │✑ ${xeonmembers}th
-                                   │✑  𝗧𝗶𝗺𝗲 : 
-                                   │✑  ${xeontime} ${xeondate}
-                                   └───────────────┈ ⳹`
+                    xeonbody = `.    /)    /)                  
+                    .    /)    /)                  
+                       (｡•ㅅ•｡)  🦋 Cᴏɴғᴇss Oꜰꜰɪᴄɪᴀʟ 🦋  ♡ˎˊ˗ 
+                    . .╭∪─∪࿎࿎─ ︿︿︿︿︿ .  .  .
+                    . .┊
+                    . .┊   👤  Nama : ⟬ @${xeonName.split("@")[0]}  ⟭
+                    . .┊   🆔  Member : ${xeonmembers}th
+                    . .┊   💠  Group : ${metadata.subject}
+                    . .┊   🌐  Waktu : ${xtime} ${xdate}
+                    . .┊
+                    . .╰───  ⃟ੂ۪ꦿ๑࿐︶︶︶︶ ♡꒱ . .
+                                  » Cᴏɴғᴇss Xᴇʀғ «`
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: '🎀 Okéstadz '}, type: 1}
 ]
