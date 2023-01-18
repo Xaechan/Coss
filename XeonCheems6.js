@@ -44,10 +44,10 @@ const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 var ucapanWaktu = `Sweet dreams 🐧`
  }
  if(time2 < "19:00:00"){
-var ucapanWaktu = `Selamat sore 🦟`
+var ucapanWaktu = `Selamat Sore 🦟`
  }
  if(time2 < "18:00:00"){
-var ucapanWaktu = `Selamat sore 🦟`
+var ucapanWaktu = `Selamat Sore 🦟`
  }
  if(time2 < "15:00:00"){
 var ucapanWaktu = `Siang pacarr.. 😈`
@@ -3614,7 +3614,7 @@ case 'keluar': case 'leave': {
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+Response Speed ${latensi.toFixed(4)} _Sec_ \n ${oldd - neww} _ms_\n\nRuntime : ${runtime(process.uptime())}
 
 💻 Info Server
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
